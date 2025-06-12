@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shalom salon</title>
+
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+
+    <!-- Swiper (Carrossel) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+    <!-- AOS (Scroll Animations) -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">Shalom Salon</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sobre">sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#servicos">serviços</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contato">contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <header class="text-center py-5">
+        <div class="container">
+            <h1>Beleza que transforma</h1>
+            <p>Experiência única em cuidado, estilo e bem-estar</p>
+            <a href="#servicos" class="btn btn-primary mt-3">conheça nossos serviços</a>
+        </div>
+    </header>
+
+    <!-- Sobre Nós -->
+    <section id="sobre" class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 mb-4 mb-md-0" data-aos="fade-right">
+                    <img src="img/salao1.jpg" class="img-fluid rounded float-left">
+                </div>
+                <div class="col-md-6" data-aos="fade-left">
+                    <h2>Sobre nós</h2>
+                    <p>O Shalom Salon é mais que um salão de beleza — é um espaço de acolhimento, cuidado e valorização
+                        da sua essência.
+                        Com profissionais qualificados e apaixonados pelo que fazem, oferecemos um atendimento
+                        personalizado e atencioso, focado em realçar sua beleza com estilo e excelência.
+                        Aqui, cada detalhe é pensado para que você se sinta bem, confiante e especial.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVIÇOS -->
+    <section id="servicos" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5" data-aos="fade-up">Nossos Serviços</h2>
+            <div class="row g-4">
+                <div class="col-md-4" data-aos="fade-up">
+                    <div class="card p-3 h-100">
+                        <img src="img/penteado.jpg" alt="Corte e Penteado" class="img-servico mb-3">
+                        <h5 class="card-title">Cortes e Penteados</h5>
+                        <p class="card-text">Estilo e personalização para realçar sua beleza natural.</p>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card p-3 h-100">
+                        <img src="img/coloracao.jpg" alt="Coloração" class="img-servico mb-3">
+                        <h5 class="card-title">Coloração</h5>
+                        <p class="card-text">Técnicas modernas e cores vibrantes para todos os gostos.</p>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card p-3 h-100">
+                        <img src="img/tratamento.jpg" alt="Tratamentos" class="img-servico mb-3">
+                        <h5 class="card-title">Tratamentos</h5>
+                        <p class="card-text">Cuidados profundos para cabelos saudáveis e brilhosos.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CARROSSEL -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="img/slide 1.jpg" class="img-fluid rounded w-100" alt="Imagem 1">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/slide 2.jpg" class="img-fluid rounded w-100" alt="Imagem 2">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/slide 3.jpg" class="img-fluid rounded w-100" alt="Imagem 3">
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section id="contato">
+        <div class="container">
+            <h2 class="mb-4">Fale Conosco</h2>
+            <p><i class="bi bi-whatsapp"></i> (11) 99999-9999</p>
+            <p><i class="bi bi-geo-alt"></i> Rua Exemplo, 123 - São Paulo</p>
+
+            <form id="form-contato" class="mt-4" action="#" method="post">
+                <div class="mb-3">
+                    <input type="text" name="nome" class="form-control" placeholder="Seu nome" required>
+                </div>
+                <div class="mb-3">
+                    <input type="email" name="email" class="form-control" placeholder="Seu e-mail" required>
+                </div>
+                <div class="mb-3">
+                    <textarea name="mensagem" class="form-control" rows="4" placeholder="Sua mensagem"
+                        required></textarea>
+                </div>
+                <button type="submit" class="btn btn-light">Enviar</button>
+            </form>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Shalom Salon. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+        const swiper = new Swiper('.swiper', {
+            loop: true,
+            autoplay: { delay: 3000 },
+            pagination: { el: '.swiper-pagination' }
+        });
+    </script>
+
+    <script>
+        document.getElementById("form-contato").addEventListener("submit", function (e) {
+            e.preventDefault(); // impede o envio real do formulário
+            alert("Mensagem enviada com sucesso!");
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+            this.reset(); // limpa os campos
+        });
+    </script>
+</body>
+
+</html>
